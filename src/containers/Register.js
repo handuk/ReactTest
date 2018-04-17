@@ -14,7 +14,7 @@ class Register extends React.Component {
             () => {
                 if(this.props.status === "SUCCESS") {
                     Materialize.toast('Success! Please log in.', 2000);
-                    browserHistory.push('/login');
+                    this.props.history.push('/login');
                     return true;
                 } else {
                     /*
